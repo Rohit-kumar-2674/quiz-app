@@ -9,5 +9,10 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
+  build: {
+    rollupOptions: {
+      external: ['lucide-react'], // Treat lucide-react as external
+    },
+  },
 })
 
